@@ -1,0 +1,15 @@
+1. Prompt user to enter decryption code (NOT the same as password)
+    a. Decryption code explains how to modify the data stored in the db. Some sort of shift based on this decryption code
+    b. Use Tink (Google product)!
+2. Database with key/value pairs
+    a. Key: Name of website (chosen by user, so Google or google.com both work)
+    b. Value: Password (as found when using decryption code)
+3. Add password by clicking generate a password, it promps you to enter any constraints (require upper, require lower, require nums, require punct, and no upper/lower/nums/punct)
+    a. Probably check boxes
+    b. Can also add passwords manually, if wanted
+        c. Would have to confirm decryption code (probably twice), then type in the password
+
+Currently using PostgreSQL, may eventually want to migrate onto AWS so that password suite can be accessed from anywhere
+
+Note that the program will NOT tell you whether your initial decryption code is right or wrong, it'll just decrypt for you :D
+
